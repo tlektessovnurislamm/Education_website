@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тіркеу</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="registration.css">
+    <script type="module" src="js/firebaseauth.js"></script>
+</head>
+<body>
+    <div class="container" id="signup" style="display:none;">
+      <h1 class="form-title">Тіркелу</h1>
+      <form method="post" action="">
+        <div id="signUpMessage" class="messageDiv" style="display:none;"></div>
+        <div class="input-group">
+           <i class="fas fa-user"></i>
+           <input type="text"  id="fName" placeholder="Аты" required>
+           <label for="fName">Аты</label>
+        </div>
+        <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input type="text"  id="lName" placeholder="Тегі" required>
+            <label for="lName">Тегі</label>
+        </div>
+        <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input type="email"  id="rEmail" placeholder="Электрондық пошта" required>
+            <label for="rEmail">Электрондық пошта</label>
+        </div>
+        <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="rPassword"  placeholder="Құпия сөз" required>
+            <label for="rPassword">Құпия сөз</label>
+        </div>
+       <button class="btn" id="submitSignUp">Тіркелу</button>
+      </form>
+      <div class="links">
+        <button id="signInButton">Кіру</button>
+      </div>
+    </div>
+
+  <div class="container" id="signIn">
+        <h1 class="form-title">Кіру</h1>
+        <form method="post" action="">
+          <div id="signInMessage" class="messageDiv" style="display:none;"></div>
+
+          <div class="input-group">
+              <i class="fas fa-envelope"></i>
+              <input type="email"  id="email" placeholder="Электрондық пошта" required>
+              <label for="email">Электрондық пошта</label>
+          </div>
+          <div class="input-group">
+              <i class="fas fa-lock"></i>
+            <input type="password" id="password"  placeholder="Құпия сөз" required>
+              <label for="password">Құпия сөз</label>
+          </div>
+          <p class="recover">
+            <a href="#">Құпия сөзді қалпына келтіру</a>
+          </p>
+         <button  class="btn"  id="submitSignIn">Кіру</button>
+        </form>
+        <div class="links">
+          <button id="signUpButton">Тіркелу</button>
+        </div>
+      </div>
+
+      <script src="js/registration.js"></script>
+</body>
+</html>
