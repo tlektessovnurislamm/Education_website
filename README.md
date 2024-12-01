@@ -1,1 +1,0 @@
-https://educationwebs.netlify.app/
